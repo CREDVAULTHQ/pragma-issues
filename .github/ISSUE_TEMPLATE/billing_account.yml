@@ -1,0 +1,29 @@
+name: Billing or account help
+description: Ask for help with billing, login, or account access
+title: "[Account/Billing]: "
+labels: ["account", "billing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For private account details, email support@credvault.net instead of posting sensitive information here.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Login or signup
+        - Plan or pricing
+        - AI credits
+        - Billing or invoices
+        - Team access
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: What do you need help with?
+      description: Do not include payment card details, API keys, passwords, or tokens.
+    validations:
+      required: true

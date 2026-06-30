@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an improvement for the Pragma desktop app
+title: "[Feature]: "
+labels: ["enhancement", "desktop"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What workflow is hard, missing, or slow today?
+      placeholder: "I want to..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Requested solution
+      description: What should Pragma do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add examples, screenshots, or related tools.
+    validations:
+      required: false
